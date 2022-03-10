@@ -1,22 +1,20 @@
 import React, {useState} from 'react';
+import Counter from './components/Counter';
+import Input from './components/Input';
+import ClassCounter from './components/ClassCounter';
 
 function App() {
 
-  let [likes, setlikes] = useState(2)
-  
-  function inc(){
-    setlikes(likes += 1);
-  }
-  function dec(){
-    setlikes(likes -= 1);
-  }
   return (
     <div className="App">
-      <h1>{likes}</h1>
-      <button onClick={dec} >Decrement</button>
-      <button onClick={inc} >Increment</button>
+      <Input/>
+      <h3>Counter на основе Хукков</h3>
+      <Counter/>
+      <h3>Counter на основе Класса</h3>
+      <ClassCounter/>
     </div>
   ); 
 }
 
 export default App;
+ 
