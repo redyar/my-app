@@ -3,6 +3,8 @@ import Counter from './components/Counter';
 import Input from './components/Input';
 import ClassCounter from './components/ClassCounter';
 import './styles/App.css';
+import ClassItem from './components/ClassItem';
+
 
 function App() {
 
@@ -14,18 +16,10 @@ function App() {
       <h3>Counter на основе Класса</h3>
       <ClassCounter/>
       <hr/>
-      <div className='post'>
-        <div className='post__content'>
-          <strong>1. JS</strong>
-          <div>
-            For JS is next.js
-            and something else
-          </div>
-        </div>
-        <div className='post__btns'>
-          <button>Delete</button>  
-        </div>  
-      </div>
+      <ClassItem post={{id:1 } }/>
+      
+      <ClassItem  />
+      <ClassItem />
     </div>
   ); 
 }
