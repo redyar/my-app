@@ -19,6 +19,7 @@ function App() {
           <strong>1. JS</strong>
           <div>
             For JS is next.js
+            and something else
           </div>
         </div>
         <div className='post__btns'>
