@@ -2,19 +2,13 @@ import React, {useState} from "react";
 import PostItem from './PostItem';
 
 
-const PostList = () => {
-
-    const [posts, setPosts] = useState([
-        {id: 1, title: 'JS', content:"Something content"},
-        {id: 2, title: 'php', content:"Something content"},
-        {id: 3, title: 'python', content:"Something content"}
-      ])
+const PostList = ({posts, title}) => {
 
     return (
         <div>
-            <h2 style={{textAlign: 'center'}} >Список Постов</h2>
+            <h2 style={{textAlign: 'center'}} > {title} </h2>
             {posts.map(post => 
-                < PostItem post={post} key={post.id}/>
+                < PostItem post={post} key={post.id} />
                 )} 
         </div>
     )
