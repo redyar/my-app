@@ -7,12 +7,20 @@
 #root {
     display: flex;
     justify-content: center;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
 
 .App {
     width: 600px;
+<<<<<<< Updated upstream
      
 } 
+=======
+}
+>>>>>>> Stashed changes
 
 .post {
     display: flex;
@@ -20,5 +28,9 @@
     border: 2px solid teal;
     margin-top: 15px;
     justify-content: space-between;
+<<<<<<< Updated upstream
     align-items: center;   
+=======
+    align-items:center;
+>>>>>>> Stashed changes
 }
